@@ -15,4 +15,4 @@ multiplied by the six categories of activities.
 
 - mean
 The mean of the data obteined for each volunteer and each activity and each feature.
-Normalized data, range: 0-1.
+Normalized data, ranged between -1, +1.
