@@ -4,11 +4,18 @@ This dataset summarize the data obtained by Samsung in an experiment with 30 vol
  WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone 
  (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, they
   captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. 
+The final goal is getting the median from diferent features related with median and standard deviation.
 
 ** Data processing
-The original data was split in train and test data. To perform the analysis, both data sets was merge.
-The Samsung teem was 
-The final goal is getting the media and standard deviation from several features.
+The original data was split in train and test data, and other relevant information like 
+the name of the features measured or the name of the activities performed by the volunteers.
+To perform the analysis, several modifications was performed:
+- merge the train and test data sets
+- change numbers identifying variables with variable names
+- change numbers identifying features with feature names
+- select features related with median and standard deviation of the data
+- calculate median for each combination of subject-variable-feature, by reshaping the data set 
+into a new data.table object data set, long-format.
 
 ** Raw data
 This script assume the original data has been downloaded and the UCI HAR Dataset folder 
